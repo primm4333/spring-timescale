@@ -49,7 +49,35 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- BACnet4J Dependency -->
+		<dependency>
+			<groupId>com.serotonin</groupId>
+			<artifactId>bacnet4j</artifactId>
+			<version>5.0.0</version>
+		</dependency>
+
+		<!-- SLF4J for Logging (optional but recommended) -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.30</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>1.7.30</version>
+		</dependency>
 	</dependencies>
+
+	<!-- Repository for BACnet4J -->
+	<repositories>
+		<repository>
+			<id>serotonin-maven-repo</id>
+			<url>https://maven.yourkit.com/maven</url>
+		</repository>
+	</repositories>
 
 	<build>
 		<plugins>
